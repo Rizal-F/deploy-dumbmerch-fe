@@ -20,7 +20,10 @@ export default function Contact({ dataContact, clickContact, contact }) {
               {item.profile.image !== null ? (
                 <>
                   <img
-                    src={"http://localhost:5000/uploads/" + item.profile?.image}
+                    src={
+                      "https://res.cloudinary.com/dgmgol0a2/image/upload/v1655086419/" +
+                      item.profile?.image
+                    }
                     className="rounded-full mr-3 img-contact"
                     alt="user avatar"
                   />
