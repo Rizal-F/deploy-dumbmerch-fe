@@ -17,7 +17,7 @@ export default function Contact({ dataContact, clickContact, contact }) {
                 clickContact(item);
               }}
             >
-              {item.profile.image !== null ? (
+              {item.profile.image !== "default-user.png" ? (
                 <>
                   <img
                     src={
