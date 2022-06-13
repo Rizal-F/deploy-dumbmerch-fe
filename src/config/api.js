@@ -2,7 +2,8 @@ import axios from "axios";
 
 // Create base URL API
 export const API = axios.create({
-  baseURL: "https://dumbmerch-api-be.herokuapp.com/api/v1",
+  baseURL:
+    process.env.SERVER_URL || "https://dumbmerch-api-be.herokuapp.com/api/v1",
 });
 
 // Set Authorization Token Header

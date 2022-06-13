@@ -22,7 +22,13 @@ const CategoryAdmin = () => {
 
   const getCategories = async () => {
     try {
-      const response = await API.get("/categories");
+      const config = {
+        headers: {
+          Authorization: "Basic " + localStorage.token,
+        },
+      };
+
+      const response = await API.get("/categories", config);
       // Store categories data to useState variabel
       setCategories(response.data.data);
     } catch (error) {
