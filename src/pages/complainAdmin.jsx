@@ -27,7 +27,7 @@ export default function ComplainAdmin() {
 
   useEffect(() => {
     // get auth and query
-    socket = io("http://localhost:5000", {
+    socket = io("https://dumbmerch-api-be.herokuapp.com", {
       auth: {
         token: localStorage.getItem("token"),
       },
