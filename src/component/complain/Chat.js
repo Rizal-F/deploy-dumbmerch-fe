@@ -20,7 +20,7 @@ export default function Chat({ contact, user, messages, sendMessage }) {
                   {item.idSender !== user.id && (
                     <img
                       src={
-                        "http://localhost:5000/uploads/" +
+                        "https://res.cloudinary.com/dgmgol0a2/image/upload/v1655086419/" +
                         contact.profile?.image
                       }
                       className="rounded-full mr-2 img-chat"
